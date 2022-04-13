@@ -1,12 +1,12 @@
 
-const api_key =process.env.API_KEY ;
 
+const api_key = process.env.NEXT_PUBLIC_SECRET_KEY;
 export default {
-  fetchTrending:{
+  fetchTrendingMovies:{
     title:"Trending",
     url:`/trending/all/week?api_key=${api_key}&language=en-US`
   },
-  fetchTopRated:{
+  fetchTopRatedMovies:{
     title:"Top Rated",
     url:`/movie/top_rated?api_key=${api_key}&language=en-US`
   },
